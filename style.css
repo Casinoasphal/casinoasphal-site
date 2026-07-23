@@ -1,1 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090909;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(212,175,55,.3);
+    z-index:1000;
+}
+
+.logo{
+    height:60px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+.telegram-btn{
+    padding:14px 30px;
+    background:#D4AF37;
+    color:#000;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.telegram-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px gold;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px 60px;
+    background:radial-gradient(circle at top,#2b2100,#090909 60%);
+}
+
+.hero h1{
+    font-size:70px;
+    color:#D4AF37;
+    text-shadow:0 0 25px rgba(212,175,55,.7);
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    font-size:20px;
+    color:#ddd;
+}
+
+.section{
+    padding:90px 8%;
+}
+
+.section h2{
+    color:#D4AF37;
+    font-size:38px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+.card{
+    max-width:900px;
+    margin:auto;
+    background:#141414;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 30px rgba(212,175,55,.25);
+}
+
+.card h3{
+    color:#D4AF37;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+footer{
+    padding:30px;
+    text-align:center;
+    border-top:1px solid rgba(212,175
