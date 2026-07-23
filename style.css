@@ -1,129 +1,156 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#090909;
-    color:#fff;
-    overflow-x:hidden;
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#050505,#121212,#050505);
+color:#fff;
+text-align:center;
 }
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:18px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,.75);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(212,175,55,.3);
-    z-index:1000;
+padding:25px;
+background:#000;
+border-bottom:2px solid #FFD700;
+box-shadow:0 0 20px rgba(255,215,0,.4);
+position:sticky;
+top:0;
+z-index:999;
 }
 
-.logo{
-    height:60px;
+header h1{
+font-size:50px;
+color:#FFD700;
+letter-spacing:4px;
+text-shadow:0 0 20px gold;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
-    transition:.3s;
-    font-weight:600;
-}
-
-nav a:hover{
-    color:#D4AF37;
-}
-
-.telegram-btn{
-    padding:14px 30px;
-    background:#D4AF37;
-    color:#000;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.telegram-btn:hover{
-    transform:scale(1.08);
-    box-shadow:0 0 20px gold;
+header p{
+margin-top:10px;
+color:#ddd;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    padding:120px 20px 60px;
-    background:radial-gradient(circle at top,#2b2100,#090909 60%);
+padding:100px 20px;
+background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80") center/cover;
+position:relative;
 }
 
-.hero h1{
-    font-size:70px;
-    color:#D4AF37;
-    text-shadow:0 0 25px rgba(212,175,55,.7);
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,.75);
+}
+
+.hero h2,
+.hero p,
+.button{
+position:relative;
+z-index:2;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+color:#FFD700;
+text-shadow:0 0 15px gold;
 }
 
 .hero p{
-    max-width:700px;
-    margin:20px auto;
-    font-size:20px;
-    color:#ddd;
+font-size:20px;
+margin-bottom:35px;
 }
 
-.section{
-    padding:90px 8%;
+.button{
+display:inline-block;
+padding:16px 40px;
+background:linear-gradient(45deg,#FFD700,#ffb300);
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.4s;
+box-shadow:0 0 20px gold;
 }
 
-.section h2{
-    color:#D4AF37;
-    font-size:38px;
-    margin-bottom:35px;
-    text-align:center;
+.button:hover{
+transform:scale(1.08);
+box-shadow:0 0 35px gold;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:80px 20px;
 }
 
 .card{
-    max-width:900px;
-    margin:auto;
-    background:#141414;
-    border:1px solid rgba(212,175,55,.35);
-    border-radius:18px;
-    padding:35px;
-    text-align:center;
-    transition:.35s;
+width:280px;
+padding:30px;
+background:#181818;
+border:1px solid #FFD700;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 0 15px rgba(255,215,0,.15);
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 0 30px rgba(212,175,55,.25);
+transform:translateY(-10px);
+box-shadow:0 0 35px rgba(255,215,0,.7);
 }
 
 .card h3{
-    color:#D4AF37;
-    font-size:28px;
-    margin-bottom:15px;
+font-size:28px;
+margin-bottom:15px;
+color:#FFD700;
 }
 
 .card p{
-    color:#cfcfcf;
-    line-height:1.8;
+color:#ddd;
+font-size:18px;
 }
 
 footer{
-    padding:30px;
-    text-align:center;
-    border-top:1px solid rgba(212,175
+padding:30px;
+background:#000;
+border-top:2px solid #FFD700;
+color:#aaa;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:34px;
+}
+
+.hero{
+padding:70px 20px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.card{
+width:90%;
+}
+
+.button{
+padding:14px 30px;
+}
+
+}
